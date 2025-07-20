@@ -1,0 +1,60 @@
+/*npm i prismjs is used to highlight the code that user will get and post*/
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html, body,
+#root{
+  height: 100%;
+  width: 100%;
+}
+main{
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+main .left, main .right{
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+main .left{
+  background-color: black;
+  position: relative;
+}
+.left .code,
+.code pre,
+.code pre code{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: #0c0c0c;
+}
+main .left .review{
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: crimson;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+main .left .review:hover{
+  background-color: darkred;
+  font-weight: bold;
+}
+main .right{
+  color: white;
+  background-color: #343434;
+  padding: 2rem 2rem;
+  font-size: 1.1rem;
+  overflow: auto;
+  font-family: italic;
+}
